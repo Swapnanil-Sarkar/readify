@@ -17,7 +17,7 @@ function App() {
       <div className="App">
         <nav className="navbar">
         <div className="container">
-          <Link to="/readify" className="navbar-brand">
+          <Link to="/" className="navbar-brand">
           <img src="https://kalvium.com/wp-content/uploads/2022/07/fav.png" alt="Logo" style={{ width: '40px', height: '40px' }} />
           Kalvium
           </Link>
