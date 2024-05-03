@@ -1,0 +1,53 @@
+.search-bar {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.search-bar:hover {
+  transform: scale(1.02); /* Enlarge slightly on hover for a subtle effect */
+}
+
+.search-bar input {
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for border color and box shadow */
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a subtle shadow on focus */
+}
+
+.search-bar input::placeholder {
+  color: #999; /* Placeholder color */
+  transition: color 0.3s ease; /* Smooth transition for placeholder color */
+}
+
+.search-bar input:hover::placeholder,
+.search-bar input:focus::placeholder {
+  color: #666; /* Darken placeholder on hover/focus for better visibility */
+}
+
+@keyframes inputFadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.search-bar input {
+  animation: inputFadeIn 0.3s ease forwards; /* Applying fade in animation */
+}
